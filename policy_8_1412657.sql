@@ -1,7 +1,7 @@
 ﻿/* TRưởng phòng chỉ được phép đọc thông tin chi tiêu của dự án trong phòng ban mình quản lí.
 Với những dự án không thuộc phòng ban của mình, các trưởng phòng được phép xem thông tin chi tiêu (VPD)
  */
-create view V_TRUONGPHONG_OF_CHITIEU as select * from CHITIEU;
+create view V_CHITIEU_OF_TRUONGPB as select * from CHITIEU;
  
 create or replace function FUNCTION_TRUONGPB_CHITIEU_ALL_SELECT(object_schema in varchar2, object_name in varchar2)
 return varchar2
