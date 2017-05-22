@@ -1,5 +1,7 @@
 ﻿/* TRưởng phòng chỉ được phép đọc thông tin chi tiêu của dự án trong phòng ban mình quản lí.
-Với những dự án không thuộc phòng ban của mình, các trưởng phòng được phép xem thông tin chi tiêu (VPD)
+Với những dự án không thuộc phòng ban của mình, các trưởng phòng được phép xem thông tin chi tiêu 
+nhưng không được phép xem số tiền cụ thể 
+(VPD)
  */
 create view V_CHITIEU_OF_TRUONGPB as select * from CHITIEU;
  
